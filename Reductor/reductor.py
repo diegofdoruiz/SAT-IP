@@ -126,7 +126,8 @@ class Reductor(object):
 			    		self.file.write("% Constraints SAT clauses\n")
 			    		init_clauses = True
 			    	# write one SAT clause constraint for this line
-			    	self.writeOneClauseConstraint(tokens)
+			    	if len(tokens)>0:
+			    		self.writeOneClauseConstraint(tokens)
 
 			    # use realine() to read next line
 			    line = f.readline()
