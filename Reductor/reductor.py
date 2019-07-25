@@ -131,6 +131,8 @@ class Reductor(object):
 
 			    # use realine() to read next line
 			    line = f.readline()
+			self.file.write("%  Function\n")
+			self.file.write("solve satisfy;")
 			self.file.close()
 			f.close()
 			self.resetGlobalVariables()
